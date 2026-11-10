@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { NavLink, Link } from 'react-router-dom'
+import { ArrowRightIcon, CartIcon, CloseIcon, HeartIcon, SearchIcon, UserIcon } from '../components/Icons'
 import { kidsProducts, menProducts, womenProducts } from '../data/products'
 
 const sitePages = [
@@ -160,22 +161,22 @@ function Navbar() {
               aria-controls="site-search"
               onClick={() => setIsSearchOpen(true)}
             >
-              <span>⌕</span>
+              <SearchIcon className="h-4 w-4" size={16} />
               <span className="max-[992px]:hidden">SEARCH</span>
             </button>
 
             <button className="inline-flex cursor-pointer items-center gap-[0.4rem] border-0 bg-transparent p-0 text-[0.74rem] font-semibold tracking-[1px] text-[#111] transition-opacity hover:opacity-60 max-[992px]:hidden" aria-label="Login">
-              <span>◔</span>
+              <UserIcon className="h-4 w-4" size={16} />
               <span>LOGIN</span>
             </button>
 
             <button className="inline-flex cursor-pointer items-center gap-[0.4rem] border-0 bg-transparent p-0 text-[0.74rem] font-semibold tracking-[1px] text-[#111] transition-opacity hover:opacity-60 max-[992px]:hidden" aria-label="Wishlist">
-              <span>♥</span>
+              <HeartIcon className="h-4 w-4" size={16} />
               <span>WISHLIST</span>
             </button>
 
             <button className="inline-flex cursor-pointer items-center gap-[0.4rem] border-0 bg-transparent p-0 text-[0.74rem] font-semibold tracking-[1px] text-[#111] transition-opacity hover:opacity-60 max-[992px]:text-base" aria-label="Cart">
-              <span>🛒</span>
+              <CartIcon className="h-4 w-4" size={16} />
               <span className="max-[992px]:hidden">CART (0)</span>
             </button>
           </div>
@@ -196,12 +197,12 @@ function Navbar() {
                 <span className="text-[0.68rem] font-bold tracking-[1.5px] text-[#666]">GAZU / SEARCH</span>
                 <h2 className="mt-2 text-[clamp(1.5rem,3vw,2rem)] tracking-[-0.5px]" id="site-search-title">Find what you’re looking for.</h2>
               </div>
-              <button className="h-9 w-9 cursor-pointer border border-[#bbb] bg-transparent text-2xl leading-none text-[#111] hover:bg-[#e7e7e7]" type="button" onClick={closeSearch} aria-label="Close search">
-                ×
+              <button className="flex h-9 w-9 cursor-pointer items-center justify-center border border-[#bbb] bg-transparent text-[#111] hover:bg-[#e7e7e7]" type="button" onClick={closeSearch} aria-label="Close search">
+                <CloseIcon className="h-4 w-4" size={16} />
               </button>
             </div>
             <label className="flex items-center gap-3 border border-[#999] bg-white px-4">
-              <span className="text-[1.4rem] text-[#555]" aria-hidden="true">⌕</span>
+              <SearchIcon className="h-5 w-5 text-[#555]" size={20} />
               <input
                 className="w-full min-w-0 border-0 bg-transparent py-4 text-base text-[#111] outline-none"
                 type="search"
@@ -232,7 +233,7 @@ function Navbar() {
                       </small>
                     </span>
                     {result.type === 'product' && <span className="whitespace-nowrap text-[0.82rem] font-bold">{result.price}</span>}
-                    <span className="text-[#555]" aria-hidden="true">→</span>
+                    <ArrowRightIcon className="h-4 w-4 text-[#555]" size={16} />
                   </Link>
                 ))
               ) : (

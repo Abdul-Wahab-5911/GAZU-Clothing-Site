@@ -5,7 +5,7 @@ export const menProducts = [
     category: 'OUTERWEAR',
     price: 'Rs. 6,500',
     tag: 'NEW IN',
-    image: 'https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=700&q=80'
+    image: '/images/1544441893-675973e31985.jpg'
   },
   {
     id: 102,
@@ -13,7 +13,7 @@ export const menProducts = [
     category: 'TEES & HOODIES',
     price: 'Rs. 2,900',
     tag: 'BESTSELLER',
-    image: 'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=700&q=80'
+    image: '/images/1556905055-8f358a7a47b2.jpg'
   },
   {
     id: 103,
@@ -21,7 +21,7 @@ export const menProducts = [
     category: 'PANTS',
     price: 'Rs. 3,700',
     tag: 'TRENDING',
-    image: 'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=700&q=80'
+    image: '/images/1624378439575-d8705ad7ae80.jpg'
   },
   {
     id: 104,
@@ -29,7 +29,7 @@ export const menProducts = [
     category: 'TEES & HOODIES',
     price: 'Rs. 1,600',
     tag: null,
-    image: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=700&q=80'
+    image: '/images/1521572267360-ee0c2909d518.jpg'
   },
   {
     id: 105,
@@ -37,7 +37,7 @@ export const menProducts = [
     category: 'OUTERWEAR',
     price: 'Rs. 4,300',
     tag: null,
-    image: 'https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=700&q=80'
+    image: '/images/1576995853123-5a10305d93c0.jpg'
   },
   {
     id: 106,
@@ -45,7 +45,7 @@ export const menProducts = [
     category: 'FOOTWEAR',
     price: 'Rs. 5,500',
     tag: 'LIMITED',
-    image: 'https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=700&q=80'
+    image: '/images/1614252235316-8c857d38b5f4.jpg'
   },
   {
     id: 107,
@@ -53,7 +53,7 @@ export const menProducts = [
     category: 'PANTS',
     price: 'Rs. 3,100',
     tag: null,
-    image: 'https://images.unsplash.com/photo-1517445312882-bc9910d016b7?auto=format&fit=crop&w=700&q=80'
+    image: '/images/1517445312882-bc9910d016b7.jpg'
   },
   {
     id: 108,
@@ -61,7 +61,7 @@ export const menProducts = [
     category: 'ACCESSORIES',
     price: 'Rs. 1,400',
     tag: null,
-    image: 'https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?auto=format&fit=crop&w=700&q=80'
+    image: '/images/1576871337632-b9aef4c17ab9.jpg'
   }
 ]
 
@@ -72,7 +72,7 @@ export const womenProducts = [
     category: 'TOPS',
     price: 'Rs. 6,200',
     tag: 'NEW IN',
-    image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=700&q=80'
+    image: '/images/1591047139829-d91aecb6caea.jpg'
   },
   {
     id: 202,
@@ -80,7 +80,7 @@ export const womenProducts = [
     category: 'DRESSES',
     price: 'Rs. 4,300',
     tag: 'BESTSELLER',
-    image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=700&q=80'
+    image: '/images/1595777457583-95e059d581b8.jpg'
   },
   {
     id: 203,
@@ -88,7 +88,7 @@ export const womenProducts = [
     category: 'BOTTOMS',
     price: 'Rs. 3,300',
     tag: 'TRENDING',
-    image: 'https://images.unsplash.com/photo-1506629905607-d9b1c6fda3fc?auto=format&fit=crop&w=700&q=80'
+    image: '/images/1594633312681-425c7b97ccd1.jpg'
   },
   {
     id: 204,
@@ -96,7 +96,7 @@ export const womenProducts = [
     category: 'TOPS',
     price: 'Rs. 1,800',
     tag: null,
-    image: 'https://images.unsplash.com/photo-1551163943-3f6a855d1153?auto=format&fit=crop&w=700&q=80'
+    image: '/images/1551163943-3f6a855d1153.jpg'
   },
   {
     id: 205,
@@ -104,7 +104,7 @@ export const womenProducts = [
     category: 'BOTTOMS',
     price: 'Rs. 3,500',
     tag: null,
-    image: 'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&w=700&q=80'
+    image: '/images/1583496661160-fb5886a0aaaa.jpg'
   },
   {
     id: 206,
@@ -112,7 +112,7 @@ export const womenProducts = [
     category: 'FOOTWEAR',
     price: 'Rs. 4,700',
     tag: 'LIMITED',
-    image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80'
+    image: '/images/1543163521-1bf539c55dd2.jpg'
   },
   {
     id: 207,
@@ -120,7 +120,7 @@ export const womenProducts = [
     category: 'ACCESSORIES',
     price: 'Rs. 4,000',
     tag: null,
-    image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80'
+    image: '/images/1584917865442-de89df76afd3.jpg'
   },
   {
     id: 208,
@@ -128,7 +128,7 @@ export const womenProducts = [
     category: 'DRESSES',
     price: 'Rs. 3,800',
     tag: null,
-    image: 'https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=700&q=80'
+    image: '/images/1566174053879-31528523f8ae.jpg'
   }
 ]
 
@@ -139,7 +139,7 @@ export const kidsProducts = [
     category: 'TOPS',
     price: 'Rs. 1,400',
     tag: 'NEW IN',
-    image: 'https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=700&q=80'
+    image: '/images/1519238263530-99bdd11df2ea.jpg'
   },
   {
     id: 302,
@@ -147,7 +147,7 @@ export const kidsProducts = [
     category: 'SETS',
     price: 'Rs. 1,900',
     tag: 'BESTSELLER',
-    image: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=700&q=80'
+    image: '/images/1519689680058-324335c77eba.jpg'
   },
   {
     id: 303,
@@ -155,7 +155,7 @@ export const kidsProducts = [
     category: 'BOTTOMS',
     price: 'Rs. 1,200',
     tag: 'TRENDING',
-    image: 'https://images.unsplash.com/photo-1519457431-44ccd64a579b?auto=format&fit=crop&w=700&q=80'
+    image: '/images/1519457431-44ccd64a579b.jpg'
   },
   {
     id: 304,
@@ -163,7 +163,7 @@ export const kidsProducts = [
     category: 'TOPS',
     price: 'Rs. 800',
     tag: null,
-    image: 'https://images.unsplash.com/photo-1503919005314-30d93d07d823?auto=format&fit=crop&w=700&q=80'
+    image: '/images/1503919005314-30d93d07d823.jpg'
   },
   {
     id: 305,
@@ -171,7 +171,7 @@ export const kidsProducts = [
     category: 'BOTTOMS',
     price: 'Rs. 900',
     tag: null,
-    image: 'https://images.unsplash.com/photo-1514090458221-65bb69cf63e6?auto=format&fit=crop&w=700&q=80'
+    image: '/images/1514090458221-65bb69cf63e6.jpg'
   },
   {
     id: 306,
@@ -179,7 +179,7 @@ export const kidsProducts = [
     category: 'FOOTWEAR',
     price: 'Rs. 1,600',
     tag: 'LIMITED',
-    image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80'
+    image: '/images/1542291026-7eec264c27ff.jpg'
   },
   {
     id: 307,
@@ -187,7 +187,7 @@ export const kidsProducts = [
     category: 'ACCESSORIES',
     price: 'Rs. 700',
     tag: null,
-    image: 'https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?auto=format&fit=crop&w=700&q=80'
+    image: '/images/1576871337632-b9aef4c17ab9.jpg'
   },
   {
     id: 308,
@@ -195,6 +195,6 @@ export const kidsProducts = [
     category: 'SETS',
     price: 'Rs. 1,800',
     tag: null,
-    image: 'https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=700&q=80'
+    image: '/images/1516627145497-ae6968895b74.jpg'
   }
 ]

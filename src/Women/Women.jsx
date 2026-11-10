@@ -10,11 +10,11 @@ function Women() {
       departmentName="WOMEN"
       title="MODERN STYLE, MADE YOURS"
       description="Considered silhouettes, refined essentials, and effortless layers made for every moment."
-      heroImage="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1600&q=80"
+      heroImage="/images/1483985988355-763728e1935b.jpg"
       capsule="CAPSULE 2026"
       editorialTitle="THE EVERYDAY EDIT"
       editorialDescription="Versatile shapes and thoughtful details come together in a wardrobe designed to move with you."
-      editorialImage="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80"
+      editorialImage="/images/1483985988355-763728e1935b.jpg"
     />
   )
 }

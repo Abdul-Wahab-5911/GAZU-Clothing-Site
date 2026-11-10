@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { ArrowRightIcon, HeartIcon } from '../components/Icons'
 
 function Department({ products, filters, departmentNumber, departmentName, title, description, heroImage, capsule, editorialTitle, editorialDescription, editorialImage }) {
   const [activeFilter, setActiveFilter] = useState('ALL')
@@ -74,7 +75,7 @@ function Department({ products, filters, departmentNumber, departmentName, title
                     aria-label={`${isFavorite ? 'Remove' : 'Add'} ${product.name} ${isFavorite ? 'from' : 'to'} wishlist`}
                     aria-pressed={isFavorite}
                   >
-                    {isFavorite ? '♥' : '♡'}
+                    <HeartIcon className="h-4 w-4" size={16} filled={isFavorite} />
                   </button>
                   <button className="absolute bottom-0 left-0 w-full translate-y-full cursor-pointer border-0 bg-black/90 p-3.5 text-[0.72rem] font-bold tracking-[1.5px] text-white uppercase transition-transform duration-300 group-hover:translate-y-0">
                     QUICK ADD +

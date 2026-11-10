@@ -1,9 +1,14 @@
 import { Link } from 'react-router-dom'
+import { ArrowRightIcon, CheckIcon, HeartIcon, RotateLeftIcon, ShieldIcon, TruckIcon } from '../components/Icons'
 import heroModel from './bg.png'
 import Poster from './men-poster.jpg'
 import Poster2 from './female-poster.jpg'
 import Poster3 from './kids-poster.jpg'
 import Drip from './my-drip.jpeg'
+import VintageCharcoalTee from './Vintage Charcoal Oversized Tee.jpg'
+import GraphicWashedTee from './Graphic Washed Streetwear Tee.jpg'
+import HeavyweightBlackTee from './Heavyweight Boxy Black Tee.jpg'
+import RawOffWhiteTee from './Raw Off-White Classic Tee.jpg'
 
 const categories = [
   { title: 'MEN', description: 'Elevated everyday essentials.', link: '/men', image: Poster },
@@ -12,10 +17,10 @@ const categories = [
 ]
 
 const featuredProducts = [
-  { name: 'Vintage Charcoal Oversized Tee', price: 'Rs. 1,600', image: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80' },
-  { name: 'Graphic Washed Streetwear Tee', price: 'Rs. 1,700', image: 'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=600&q=80' },
-  { name: 'Heavyweight Boxy Black Tee', price: 'Rs. 1,500', image: 'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=600&q=80' },
-  { name: 'Raw Off-White Classic Tee', price: 'Rs. 1,500', image: 'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=600&q=80' }
+  { name: 'Vintage Charcoal Oversized Tee', price: 'Rs. 1,600', image: VintageCharcoalTee },
+  { name: 'Graphic Washed Streetwear Tee', price: 'Rs. 1,700', image: GraphicWashedTee },
+  { name: 'Heavyweight Boxy Black Tee', price: 'Rs. 1,500', image: HeavyweightBlackTee },
+  { name: 'Raw Off-White Classic Tee', price: 'Rs. 1,500', image: RawOffWhiteTee }
 ]
 
 function Home() {
@@ -67,8 +72,9 @@ function Home() {
               <div>
                 <h3 className="mb-1 text-[1.05rem] font-extrabold tracking-[1.5px] text-white">{category.title}</h3>
                 <p className="mb-2.5 text-[0.78rem] leading-[1.4] text-[#999]">{category.description}</p>
-                <Link className="text-[0.72rem] font-bold tracking-[1.2px] text-white underline underline-offset-[3px] transition-opacity hover:opacity-70" to={category.link}>
-                  SHOP {category.title} →
+                <Link className="inline-flex items-center gap-2 text-[0.72rem] font-bold tracking-[1.2px] text-white underline underline-offset-[3px] transition-opacity hover:opacity-70" to={category.link}>
+                  <span>SHOP {category.title}</span>
+                  <ArrowRightIcon className="h-3.5 w-3.5" size={14} />
                 </Link>
               </div>
             </div>
@@ -95,10 +101,10 @@ function Home() {
       <section className="border-y border-[#dedede] bg-[#ededed] px-16 py-[2.2rem] max-md:px-6 max-md:py-8">
         <div className="mx-auto grid max-w-[1400px] grid-cols-4 gap-8 max-[1100px]:grid-cols-2 max-[1100px]:gap-6 max-md:grid-cols-1">
           {[
-            ['🚚', 'FAST DELIVERY', 'Quick & safe delivery'],
-            ['↩️', 'EASY RETURNS', 'Within 15 days'],
-            ['✓', 'QUALITY ASSURED', 'Best fashion, best quality'],
-            ['🔒', 'SECURE PAYMENT', '100% secure checkout']
+            [<TruckIcon key="truck" className="h-5 w-5" />, 'FAST DELIVERY', 'Quick & safe delivery'],
+            [<RotateLeftIcon key="returns" className="h-5 w-5" />, 'EASY RETURNS', 'Within 15 days'],
+            [<CheckIcon key="quality" className="h-5 w-5" />, 'QUALITY ASSURED', 'Best fashion, best quality'],
+            [<ShieldIcon key="secure" className="h-5 w-5" />, 'SECURE PAYMENT', '100% secure checkout']
           ].map(([icon, title, description]) => (
             <div className="flex items-center gap-4" key={title}>
               <div className="flex shrink-0 items-center justify-center text-[#111]">{icon}</div>
@@ -121,7 +127,9 @@ function Home() {
             <div className="group flex flex-col" key={product.name}>
               <div className="relative mb-3 aspect-[3/4] overflow-hidden bg-[#dcdcdc]">
                 <img className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src={product.image} alt={product.name} />
-                <button className="absolute top-3 right-3 flex h-8 w-8 items-center justify-center rounded-full border-0 bg-white/85 text-[#111] transition-all hover:scale-110 hover:bg-white hover:text-rose-600" aria-label="Add to wishlist">♥</button>
+                <button className="absolute top-3 right-3 flex h-8 w-8 items-center justify-center rounded-full border-0 bg-white/85 text-[#111] transition-all hover:scale-110 hover:bg-white hover:text-rose-600" aria-label="Add to wishlist">
+                  <HeartIcon className="h-4 w-4" size={16} />
+                </button>
               </div>
               <div className="flex flex-col gap-1">
                 <h4 className="text-[0.82rem] font-semibold tracking-[0.4px] text-[#222]">{product.name}</h4>

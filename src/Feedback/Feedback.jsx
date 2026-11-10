@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { ArrowRightIcon, StarIcon } from '../components/Icons'
 
 function Feedback() {
   const [rating, setRating] = useState('')
@@ -79,7 +80,11 @@ function Feedback() {
                         onChange={(event) => setRating(event.target.value)}
                         required={index === 0}
                       />
-                      <span className="whitespace-nowrap text-[0.9rem] tracking-[1px] text-[#111]" aria-hidden="true">{'★'.repeat(Number(value))}</span>
+                      <span className="flex items-center gap-0.5 whitespace-nowrap text-[0.9rem] tracking-[1px] text-[#111]" aria-hidden="true">
+                        {Array.from({ length: Number(value) }, (_, starIndex) => (
+                          <StarIcon key={starIndex} className="h-3.5 w-3.5" size={14} />
+                        ))}
+                      </span>
                       <span className="text-[0.66rem] text-[#666] max-[440px]:text-[0.58rem]">{label}</span>
                     </label>
                   ))}
@@ -115,7 +120,8 @@ function Feedback() {
 
               <p className="-mt-3 text-[0.76rem] text-[#777]">Your details are only used to follow up on your feedback.</p>
               <button className="flex w-fit min-w-[190px] cursor-pointer items-center justify-between gap-8 border border-[#111] bg-[#111] px-5 py-4 text-[0.72rem] font-bold tracking-[1.2px] text-white transition-colors hover:bg-[#f7f7f7] hover:text-[#111]" type="submit">
-                SEND FEEDBACK <span aria-hidden="true">→</span>
+                <span>SEND FEEDBACK</span>
+                <ArrowRightIcon className="h-4 w-4" size={16} />
               </button>
             </form>
           )}
